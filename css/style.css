@@ -1,28 +1,26 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
+footer {
+    text-align: left;
+    margin-left: 5vw;
 }
 
-footer {
-    position: absolute;
-    bottom: 5px;
-    left: 5vw;
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 4vw;
 }
 
 h1 {
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
+    margin: 25px 0px;
 }
 
 img {
     width: 200px;
 }
 
-.homepage-agent-selection-menu {
-    margin: 25px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+main {
+    margin-left: 5vw;
 }
 
 .agent-selection-card {
@@ -36,7 +34,29 @@ img {
     width: 100%;
 }
 
+.homepage-agent-selection-menu {
+    height: fit-content;
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .lineup-img {
+    width: 30vw;
+} */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-content {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
 .page-content {
-    margin: 0px 5vw 2vh 5vw;
+    margin: 0px 5vw 2vh 0px;
     text-align: left;
 }
