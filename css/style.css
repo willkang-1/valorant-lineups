@@ -42,21 +42,65 @@ main {
     justify-content: center;
 }
 
-/* .lineup-img {
-    width: 30vw;
-} */
+.lineup img {
+    width: 30%;
+    border: solid blue 3px;
+    border-radius: 50px;
+    padding: 0.25vw;
+    margin-bottom: 5vh;
+}
+
+.lineup-post img{
+    width: 40%;
+}
+
+.lineup .zoom:hover {
+    width: 90vw;
+    position: absolute;
+    left: 5vw;
+}
 
 .navbar {
     display: flex;
     flex-direction: row;
+    border-bottom: solid black 2px;
+    padding: 3vh 9vw;
+    margin-left: -4vw;
+    width: 100vw;
+    background-color: lightgray;
 }
 
-.navbar-content {
-    margin-top: 10px;
-    margin-left: 25px;
+.navbar a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 3vw;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.navbar a:visited {
+    color: blue;
+}
+
+.navbar .nav-current a{
+    color: green;
+    pointer-events: none;
 }
 
 .page-content {
     margin: 0px 5vw 2vh 0px;
     text-align: left;
+}
+
+.viper-logo {
+    position: absolute;
+    top: 9.2vh;
+    height: 8vh;
+    width: auto;
+    border: solid green 2px;
+    border-radius: 8vh;
 }
