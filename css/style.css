@@ -50,6 +50,26 @@ main {
     margin-bottom: 5vh;
 }
 
+.lineup-dart img:nth-child(2n) {
+    border: solid red 3px;
+}
+
+.lineup-dart img:nth-child(3n) {
+    border: solid green 3px;
+}
+
+.lineup-post img:nth-child(2n) {
+    border: solid red 3px;
+}
+
+.lineup-post img:nth-child(3n) {
+    border: solid green 3px;
+}
+
+.lineup-post img:nth-child(4n) {
+    border: solid purple 3px;
+}
+
 .lineup-post img{
     width: 40%;
 }
