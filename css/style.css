@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 footer {
     text-align: left;
     margin-left: 5vw;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 4vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
-    margin: 25px 0px;
 }
 
 img {
@@ -21,6 +25,10 @@ img {
 
 main {
     margin-left: 5vw;
+}
+
+nav {
+    width: 100vw;
 }
 
 .agent-selection-card {
@@ -32,6 +40,10 @@ main {
 .agent-image {
     height: 400px;
     width: 100%;
+}
+
+.header-text {
+    color: white;
 }
 
 .homepage-agent-selection-menu {
@@ -74,19 +86,12 @@ main {
     width: 40%;
 }
 
-.lineup .zoom:hover {
-    width: 90vw;
-    position: absolute;
-    left: 5vw;
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
     border-bottom: solid black 2px;
     padding: 3vh 9vw;
     margin-left: -4vw;
-    width: 100vw;
     background-color: lightgray;
 }
 
@@ -116,6 +121,19 @@ main {
     text-align: left;
 }
 
+/* .sova-banner {
+    margin: 0;
+    padding: 0;
+    background-color: #858585;
+    width: 100vw;
+    min-height: 400px;
+    background-image: url("../images/sova-background.webp");
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 .viper-logo {
     position: absolute;
     top: 9.2vh;
@@ -123,4 +141,29 @@ main {
     width: auto;
     border: solid green 2px;
     border-radius: 8vh;
+}
+
+@media screen and (max-width: 900px){
+    h1 {
+        font-size: 30px;
+    }
+    
+    .agent-image {
+        width: fit-content;
+        height: auto;
+    }
+
+    .agent-selection-card p {
+        display: none;
+    }
+
+    .homepage-agent-selection-menu {
+        flex-direction: column;
+        margin-left: -5vw;
+    }
+
+    .non-mobile {
+        display: none;
+    }
+
 }
