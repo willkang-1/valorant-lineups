@@ -5,6 +5,8 @@ html {
 }
 
 footer {
+    position: sticky;
+    bottom: 2vh;
     text-align: left;
     margin-left: 5vw;
 }
@@ -19,12 +21,13 @@ h1 {
     text-align: center;
 }
 
-img {
-    width: 200px;
+h3 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-main {
-    margin-left: 5vw;
+img {
+    width: 200px;
 }
 
 nav {
@@ -40,6 +43,12 @@ nav {
 .agent-image {
     height: 400px;
     width: 100%;
+}
+
+.form-submit {
+    margin-top: 1vh;
+    height: 2vh;
+    width: 100px;
 }
 
 .header-text {
@@ -86,6 +95,14 @@ nav {
     width: 40%;
 }
 
+.mobile {
+    display: none;
+}
+
+.non-mobile {
+    display: inline;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -117,8 +134,29 @@ nav {
 }
 
 .page-content {
-    margin: 0px 5vw 2vh 0px;
+    margin: 0px 5vw 2vh 5vw;
     text-align: left;
+}
+
+.source-form {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.source-form-box {
+    margin: 0px 5vw 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.source-links {
+    margin: 0px 5vw 5vh 5vw;
+}
+
+.suggestion-box {
+    height: 30vh;
+    width: 80vw;
 }
 
 /* .sova-banner {
@@ -149,7 +187,7 @@ nav {
     }
     
     .agent-image {
-        width: fit-content;
+        width: 90vw;
         height: auto;
     }
 
@@ -160,6 +198,10 @@ nav {
     .homepage-agent-selection-menu {
         flex-direction: column;
         margin-left: -5vw;
+    }
+
+    .mobile {
+        display: inline;
     }
 
     .non-mobile {
