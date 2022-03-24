@@ -7,7 +7,18 @@
 	<link rel="icon" href="images/valorant-logo.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3ef974b85d.js" crossorigin="anonymous"></script>
 	<title>Lineup Sources</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV2B5FG2SY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HV2B5FG2SY');
+    </script>
 </head>
 <body>
 	<header>
@@ -21,7 +32,7 @@
             </ul>
         </nav>
 		
-		<h1>Lineup Sources</h1>
+        <h1 class="lineup-title">Lineup Sources</h1>
 	</header>
 	
 	<main>
@@ -35,22 +46,22 @@
         </div>
     
         <div class="source-form-box">
-            <h3>Have any suggestions for the website?  Let me know below!</h3>
+            <h3>Have a new lineup or suggestion for the website?  Let me know below!</h3>
             <form
                 class="source-form"
                 action="https://formspree.io/f/xdobddwr"
                 method="POST"
             >
                 <label>
-                    Your name:
-                    <input type="text" name="name">
-                </label>
+                    <i class="fa-solid fa-address-card"></i> Your name:
+                    <input type="text" name="name" required>
+                </label> 
 
                 <br />
                 
                 <label>
-                    Contact email:
-                    <input type="text" name="email">
+                    <i class="fa-solid fa-envelope"></i> Contact email:
+                    <input type="text" name="email" required>
                 </label>
                 
                 <br />
@@ -58,18 +69,18 @@
                 <label for="suggestion">
                     Site suggestions:
                 </label>
-                <textarea class="suggestion-box" name="suggestion" id="suggestion"></textarea>
+                <textarea class="suggestion-box" name="suggestion" id="suggestion" required></textarea>
     
                 <button class="form-submit" type="submit">Send</button>
             </form>
         </div>
 	</main>
 
-	<!-- <footer>
+	<footer>
         <p>
             Please watch the videos on this page for more details regarding the lineups and help support their channel!
         </p>
-    </footer> -->
+    </footer>
 </body>
 
 </html>
