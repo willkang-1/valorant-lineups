@@ -125,7 +125,7 @@ nav {
     margin-bottom: 5vh;
 }
 
-.lineup-banner {
+.lineup-banner-non-mobile {
     margin-bottom: 5%;
     background-color: lightblue;
     padding: 3%;
@@ -138,19 +138,43 @@ nav {
     background-size: contain;
 }
 
-.lineup-banner-kayo {
+.lineup-banner-kayo-mobile {
+    min-height: 200px;
+    background-position: center;
+    background-image: url('../images/kayo-banner.png');
+}
+
+.lineup-banner-sova-mobile {
+    min-height: 200px;
+    background-position: center;
+    background-image: url('../images/sova-banner.png');
+}
+
+.lineup-banner-viper-mobile {
+    min-height: 200px;
+    background-position: center;
+    background-image: url('../images/viper-banner.png');
+}
+
+.lineup-banner-killjoy-mobile {
+    min-height: 200px;
+    background-position: center;
+    background-image: url('../images/killjoy-banner.png');
+}
+
+.lineup-banner-kayo-non-mobile {
     background-image: url('../images/home-kayo-agent.png');
 }
 
-.lineup-banner-sova {
+.lineup-banner-sova-non-mobile {
     background-image: url('../images/home-sova-agent.png');
 }
 
-.lineup-banner-viper {
+.lineup-banner-viper-non-mobile {
     background-image: url('../images/home-viper-agent.png');
 }
 
-.lineup-banner-killjoy {
+.lineup-banner-killjoy-non-mobile {
     background-image: url('../images/home-killjoy-agent.png');
 }
 
@@ -249,7 +273,7 @@ nav {
 }
 
 .mobile {
-    display: inline;
+    display: block;
 }
 
 .non-mobile {
@@ -283,7 +307,7 @@ nav {
     }
 
     .non-mobile {
-        display: inline;
+        display: block;
     }
 }
 
