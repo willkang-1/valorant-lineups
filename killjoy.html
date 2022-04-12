@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Killjoy Lineups</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV2B5FG2SY"></script>
     <script>
@@ -20,21 +24,41 @@
     </script>
 </head>
 <body>
+    <a class="skip" href="#skip">Skip to main content</a>
+
 	<header>
-        <nav>
-            <ul class="navbar">
-                <li class="navbar-content"><a href="index.html">Home</a></li>
-                <li class="navbar-content"><a href="sova.html">Sova</a></li>
-                <li class="navbar-content"><a href="kayo.html">Kay/O</a></li>
-                <li class="navbar-content"><a href="viper.html">Viper</a></li>
-                <li class="navbar-content nav-current"><a href="killjoy.html">Killjoy</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/home-valorant-logo.png" class="nav-img" alt="home-nav-button"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="sova.html">Sova</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kayo.html">Kay/O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viper.html">Viper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="killjoy.html">Killjoy (current)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="credit.html">Sources</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 		
-		<h1 class="lineup-title">Kay/O Lineups</h1>
+		<h1 class="agent-title">Killjoy Lineups</h1>
 	</header>
 	
-	<main>
+	<main id="skip">
 
         <p class="page-content">
             With Killjoy's kit, her abilities allow for easy post-plant setups which simply involve throwing a swarm grenade on the bomb before you leave.
@@ -46,22 +70,149 @@
             Some of the lineups on this page will involve having your ultimate.  While these opportunities will not always come, these can net your team some free kills and help win rounds easily!
             By pinching the enemy into a tight corner then throwing a grenade on them, they will be forced to either be detained by your ultimate or die to your swarm grenades. 
         </p>
+
+        <p id="mobile-helper-text" class="page-content mobile">Click on any of the buttons below to show their respective&nbsp;lineups!</p>
         
         <div class="lineup-banner-killjoy-mobile mobile"></div>
         <div class="lineup-banner-non-mobile lineup-banner-killjoy-non-mobile non-mobile"></div>
 
-        <div class="map-container">
+        <div class="lineup-mobile-container mobile">
 
-            <h2>Ascent</h2>
+            <h2>Ascent Lineups</h2>
 
-            <h3>A Site Post Plant</h3>
-            <figure class="lineup">
-                <img class="lineup-img" src="images/kj-ascent-post-plant-b-site-bomb-loc.png" alt="KJ B site post plant bomb location"/>
-                <img class="lineup-img" src="images/kj-ascent-post-plant-b-site-final.png" alt="KJ B site post plant grenade final location"/>
-                <img class="lineup-img zoom" src="images/kj-ascent-post-plant-b-site-location.png" alt="KJ B site post plant grenade starting location"/>
-                <img class="lineup-img zoom" src="images/kj-ascent-post-plant-b-site-throw.png" alt="KJ B site post plant grenade launch directions"/>
-            </figure>
+            <div class="mobile-buttons">
+                <!-- Mobile Buttons to Open Modal Boxes -->
+                <button type="button" class="mobile-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#ascentBLineupModal">
+                    B Site
+                </button>
+            </div>
+        </div>
 
+        <div class="mobile">
+            <!-- Lineup Modal Boxes -->
+            <div class="modal fade" id="ascentBLineupModal" tabindex="-1" role="dialog" aria-labelledby="ascentBLineupModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ascentASiteLineupModalBox">Ascent A Site Lineup</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure class="lineup lineup-dart">
+                            <div id="ascentBLineup" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="20000">
+                                        <img src="images/kj-ascent-post-plant-b-site-bomb-loc.png" class="d-block w-100" alt="Killjoy A site bomb plant location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Where to Plant</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/kj-ascent-post-plant-b-site-location.png" class="d-block w-100" alt="Killjoy A site molly starting location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Starting Position</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/kj-ascent-post-plant-b-site-throw.png" class="d-block w-100" alt="Killjoy A site molly launch directions">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Lineup Directions</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/kj-ascent-post-plant-b-site-final.png" class="d-block w-100" alt="Killjoy A site molly final location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Final Grenade Position</h1>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <button class="carousel-control-prev" type="button" data-bs-target="#ascentBLineup" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#ascentBLineup" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container non-mobile">
+
+            <h2 class="map-name">Ascent</h2>
+
+            <div class="lineup-container">
+                <h3>B Site</h3>
+
+                <figure class="lineup lineup-dart">
+                    <div id="ascentBLineup" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="20000">
+                                <img src="images/kj-ascent-post-plant-b-site-bomb-loc.png" class="d-block w-100" alt="Killjoy A site bomb plant location">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Where to Plant</h1>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="20000">
+                                <img src="images/kj-ascent-post-plant-b-site-location.png" class="d-block w-100" alt="Killjoy A site molly starting location">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Starting Position</h1>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="20000">
+                                <img src="images/kj-ascent-post-plant-b-site-throw.png" class="d-block w-100" alt="Killjoy A site molly launch directions">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Lineup Directions</h1>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="20000">
+                                <img src="images/kj-ascent-post-plant-b-site-final.png" class="d-block w-100" alt="Killjoy A site molly final location">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Final Grenade Position</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ascentBLineup" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ascentBLineup" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </figure>
+            </div>
         </div>
 	</main>
 
