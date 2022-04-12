@@ -36,14 +36,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="sova.html">Sova</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kayo.html">Kay/O</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="viper.html">Viper (current)</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="viper.html" style="color: blue;">Viper (current)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="killjoy.html">Killjoy</a>
@@ -55,11 +55,11 @@
             </div>
         </nav>
 		
-		<h1 class="viper-lineup-title">
+		<div class="viper-lineup-title">
             <img class="viper-logo" src="images/viper-spray.png" alt="Viper spray"/>
-            <span>Viper Lineups</span>
+            <h1 class="agent-title">Viper Lineups</h1>
             <img class="viper-logo" src="images/viper-spray.png" alt="Viper spray"/>
-        </h1>
+        </div>
 	</header>
 	
 	<main id="skip">
@@ -76,29 +76,159 @@
             However, be careful as many players are aware of the Viper lineups and will search for you before they start defusing.
         </p>
 
+        <p id="mobile-helper-text" class="page-content mobile">Click on any of the buttons below to show their respective&nbsp;lineups!</p>
+
         <div class="lineup-banner-viper-mobile mobile"></div>
         <div class="lineup-banner-non-mobile lineup-banner-viper-non-mobile non-mobile"></div>
 
-        <div class="map-container">
+        <div class="lineup-mobile-container mobile">
+            <h2>Ascent Lineups</h2>
 
-            <h2>Ascent</h2>
+            <div class="mobile-buttons">
+                <!-- Mobile Buttons to Open Modal Boxes -->
+                <button type="button" class="mobile-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#ascentALineupModal">
+                    A Site
+                </button>
 
-            <h3>A Site Post Plant</h3>
-            <figure class="lineup lineup-post">
-                <img class="lineup-img" src="images/viper-ascent-post-plant-a-site-bomb-loc.png" alt="Viper A site post plant bomb location"/>
-                <img class="lineup-img" src="images/viper-ascent-post-plant-a-site-final.png" alt="Viper A site post plant molly final location"/>
-                <img class="lineup-img zoom" src="images/viper-ascent-post-plant-a-site-location.png" alt="Viper A site post plant molly starting location"/>
-                <img class="lineup-img zoom" src="images/viper-ascent-post-plant-a-site-throw.png" alt="Viper A site post plant molly launch directions"/>
-            </figure>
+                <button type="button" class="mobile-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#ascentBLineupModal">
+                    B Site
+                </button>
+            </div>
+        </div>
 
-            <h3>B Site Post Plant</h3>
-            <figure class="lineup lineup-post">
-                <img class="lineup-img" src="images/viper-ascent-post-plant-b-site-bomb-loc.png" alt="Viper B site post plant bomb location"/>
-                <img class="lineup-img" src="images/viper-ascent-post-plant-b-site-final.png" alt="Viper B site post plant molly final location"/>
-                <img class="lineup-img zoom" src="images/viper-ascent-post-plant-b-site-location.png" alt="Viper B site post plant molly starting location"/>
-                <img class="lineup-img zoom" src="images/viper-ascent-post-plant-b-site-throw.png" alt="Viper B site post plant molly launch directions"/>
-            </figure>
+        <div class="mobile">
+            <!-- Lineup Modal Boxes -->
+            <div class="modal fade" id="ascentALineupModal" tabindex="-1" role="dialog" aria-labelledby="ascentALineupModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ascentASiteLineupModalBox">Ascent A Site Lineup</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure class="lineup lineup-dart">
+                            <div id="ascentALineup" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#ascentALineup" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#ascentALineup" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#ascentALineup" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#ascentALineup" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-a-site-bomb-loc.png" class="d-block w-100" alt="Viper A site bomb plant location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Where to Plant</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-a-site-location.png" class="d-block w-100" alt="Viper A site molly starting location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Starting Position</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-a-site-throw.png" class="d-block w-100" alt="Viper A site molly launch directions">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Lineup Directions</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-a-site-final.png" class="d-block w-100" alt="Viper A site molly final location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Final Grenade Position</h1>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <button class="carousel-control-prev" type="button" data-bs-target="#ascentALineup" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#ascentALineup" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="modal fade" id="ascentBLineupModal" tabindex="-1" role="dialog" aria-labelledby="ascentBLineupModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ascentASiteLineupModalBox">Ascent B Site Lineup</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <figure class="lineup lineup-dart">
+                            <div id="ascentBLineup" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#ascentBLineup" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-b-site-bomb-loc.png" class="d-block w-100" alt="Viper A site bomb plant location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Where to Plant</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-b-site-location.png" class="d-block w-100" alt="Viper A site molly starting location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Starting Position</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-b-site-throw.png" class="d-block w-100" alt="Viper A site molly launch directions">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Lineup Directions</h1>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item" data-bs-interval="20000">
+                                        <img src="images/viper-ascent-post-plant-b-site-final.png" class="d-block w-100" alt="Viper A site molly final location">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h1>Final Grenade Position</h1>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <button class="carousel-control-prev" type="button" data-bs-target="#ascentBLineup" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#ascentBLineup" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
 	</main>
 
