@@ -25,6 +25,8 @@
     </script>
 </head>
 <body>
+    <a class="skip" href="#skip">Skip to main content</a>
+
 	<header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">
@@ -56,7 +58,7 @@
 		<h1 class="agent-title">Lineup Sources</h1>
 	</header>
 	
-	<main>
+	<main id="skip">
         <div class="accordion" id="sourceAccordian">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="sovaSource">
@@ -125,38 +127,43 @@
 
         <div class="source-form-box">
             <h3>Have a new lineup or suggestion for the website?  Let me know below!</h3>
+
             <form
-                class="source-form"
+                class="grid-container"
                 action="https://formspree.io/f/xdobddwr"
                 method="POST"
             >
-                <label>
+                <label class="grid-item-name">
                     <i class="fa-solid fa-address-card"></i> Your name:
                     <input type="text" name="name" required>
                 </label> 
 
                 <br />
                 
-                <label>
+                <label class="grid-item-email">
                     <i class="fa-solid fa-envelope"></i> Contact email:
                     <input type="text" name="email" required>
                 </label>
 
                 <br />
 
-                <label>
-                    <i class="fa-brands fa-youtube"></i> Lineup Link (Youtube, TikTok, etc.):
+                <label class="grid-item-source">
+                    <i class="fa-brands fa-youtube"></i> Lineup Link:
                     <input type="text" name="link">
                 </label>
                 
                 <br />
 
-                <label for="suggestion">
-                    Site suggestions:
-                </label>
-                <textarea class="suggestion-box" name="suggestion" id="suggestion"></textarea>
+                <div class="grid-item-suggest">
+                    <label for="suggestion" class="grid-item-suggestion">
+                        Site suggestions:
+                    </label>
+                    
+                    <textarea class="suggestion-box grid-item-box" name="suggestion" id="suggestion"></textarea>
+                </div>
+                
     
-                <button class="form-submit" type="submit">Send</button>
+                <button class="form-submit grid-item-submit" type="submit">Send</button>
             </form>
         </div>
 	</main>
