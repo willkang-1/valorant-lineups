@@ -119,7 +119,7 @@ img {
 .flip-card {
     margin-bottom: 1vh;
     background-color: transparent;
-    width: auto;
+    width: 100%;
     height: 175px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -374,6 +374,10 @@ img {
     grid-column-end: 3;
 }
 
+.tablet {
+    display: none;
+}
+
 .non-mobile {
     display: none;
 }
@@ -400,7 +404,6 @@ img {
     }
 
     .flip-card {
-        width: auto;
         height: 350px;
     }
 
@@ -416,6 +419,14 @@ img {
 
     .mobile {
         display: none;
+    }
+
+    #hide-tablet-flip {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
     }
 
     .non-mobile {
@@ -445,7 +456,7 @@ img {
 
     .flip-card {
         width: auto;
-        height: 600px;
+        height: 500px;
     }
 
     .flip-card img {
@@ -467,6 +478,10 @@ img {
     }
 
     .mobile {
+        display: none;
+    }
+
+    .tablet {
         display: none;
     }
 
